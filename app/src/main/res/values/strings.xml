@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidProjectDemo</string>
+    <string name="hello_world_demo">HelloWorldDemo</string>
+
+    <string name="hello_toast_show_toast">Show Toast</string>
+    <string name="hello_toast_count">0</string>
+    <string name="hello_toast_count_up">Count</string>
+</resources>
