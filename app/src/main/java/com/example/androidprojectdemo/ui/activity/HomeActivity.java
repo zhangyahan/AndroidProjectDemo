@@ -18,8 +18,13 @@ public class HomeActivity extends AppActivity  {
         setContentView(R.layout.activity_home);
     }
 
-    public void onHelloWorldDemoClick(Button button) {
+    public void onHelloWorldDemoClick(View view) {
         Log.d(this.getClass().getName(), "onHelloWorldDemoClick");
-        HelloWorldActivity.start(this.getBaseContext());
+        HelloWorldActivity.start(this);
+    }
+
+    public void onHelloToastDemoClick(View view) {
+        Log.d(this.getClass().getName(), "onHelloToastDemoClick");
+        HelloToastActivity.start(this);
     }
 }

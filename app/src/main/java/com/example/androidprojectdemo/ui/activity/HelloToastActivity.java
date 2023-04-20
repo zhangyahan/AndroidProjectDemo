@@ -3,6 +3,8 @@ package com.example.androidprojectdemo.ui.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -15,6 +17,12 @@ public class HelloToastActivity extends AppCompatActivity {
     private TextView count;
 
     private int countValue;
+
+    public static void start(Context context) {
+        Intent intent = new Intent(context, HelloToastActivity.class);
+        context.startActivity(intent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
